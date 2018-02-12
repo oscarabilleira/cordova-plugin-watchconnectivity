@@ -5,6 +5,10 @@ Simple plugin that establishes iOS Watch Connectivity session with Watch OS 2 an
 ## Installation
 
 
+####vPrep
+
+Install npm 'xcode' package because our hooks need it: npm install -g xcode
+
 
 ### XCode
 
