@@ -4,18 +4,42 @@ Simple plugin that establishes iOS Watch Connectivity session with Watch OS 2 an
 
 ## Installation
 
+
+
+### XCode
+
+File > New > Target > Apple Watch: Language ObjC, Select Glance and Notifications > Finish > Activate
+
+
+
+
 ### With cordova-cli
 
 If you are using [cordova-cli](https://github.com/apache/cordova-cli), install
 with:
 
-    cordova plugin add https://github.com/DVenkatesh/cordova-plugin-watchconnectivity.git
+    cordova plugin add https://github.com/gori78/cordova-plugin-watchconnectivity.git
+     cordova prepare
+     
+     
+
+
 
 ### With plugman
 
 With a plain [plugman](https://github.com/apache/cordova-plugman), you should be able to install with something like:
 
     plugman --platform <ios> --project <directory> --plugin https://github.com/DVenkatesh/cordova-plugin-watchconnectivity.git
+    
+    
+    
+       ###  XCode
+
+Set CFBundleVersion (Bundle Version) and CFBundleShortVersionString (Bundle versions string, short) of all targets to the same value (use XCode's search feature and change all 3 .plist values)
+
+At this point your builds should succeed
+
+    
 
 ## Use from Javascript
 Edit `www/js/index.js` and add the following code inside `onDeviceReady`
