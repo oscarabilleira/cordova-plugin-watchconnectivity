@@ -33,7 +33,7 @@ With a plain [plugman](https://github.com/apache/cordova-plugman), you should be
     
     
     
-       ###  XCode
+ ###  XCode
 
 Set CFBundleVersion (Bundle Version) and CFBundleShortVersionString (Bundle versions string, short) of all targets to the same value (use XCode's search feature and change all 3 .plist values)
 
